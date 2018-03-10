@@ -9,7 +9,6 @@
 .project
 .settings
 .springBeans
-.sts4-cache
 
 ### IntelliJ IDEA ###
 .idea
@@ -25,6 +24,7 @@ dist/
 nbdist/
 .nb-gradle/
 
-###  ###
+### VSCode ###
 .vscode
+.sts4-cache
 bin
