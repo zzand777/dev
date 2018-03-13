@@ -1,4 +1,4 @@
-package dev.springboot.company;
+package dev.springboot.company.entity.id;
 
 import java.io.Serializable;
 
