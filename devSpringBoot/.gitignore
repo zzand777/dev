@@ -28,3 +28,4 @@ nbdist/
 .vscode
 .sts4-cache
 bin
+src/main/resources/application.properties
