@@ -1,6 +1,6 @@
 package dev.springboot.domain.branch;
 
-import dev.springboot.domain.branch.projection.BranchProejction;
+import dev.springboot.domain.branch.projection.BranchProjection;
 import dev.springboot.domain.branch.service.BranchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -17,7 +17,7 @@ public class BranchController{
     private BranchService branchService;
 
     @GetMapping
-    public List<BranchProejction> branchAll(){
+    public List<BranchProjection> branchAll(){
         return branchService.selectAll();
     }
 
