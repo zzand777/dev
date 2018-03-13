@@ -22,8 +22,4 @@ public class CompanyID implements Serializable{
         this.compCd = compCd;
     }
 
-    public String toString() {
-		return String.format("%s", compCd);
-	}
-
 }
