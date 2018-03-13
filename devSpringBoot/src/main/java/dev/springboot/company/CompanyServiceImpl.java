@@ -1,5 +1,6 @@
 package dev.springboot.company;
 
+import dev.springboot.company.projection.CompanyProjection;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,9 +12,8 @@ public class CompanyServiceImpl implements CompanyService{
     CompanyRepository companyRepository;
 
 	@Override
-	public Iterable<Company> selectAll() {
-		return companyRepository.findAll();
-		//return companyRepository.findAll();
+	public Iterable<CompanyProjection> selectAll() {
+		return companyRepository.findAllProjectedBy();
 	}
 
     @Override

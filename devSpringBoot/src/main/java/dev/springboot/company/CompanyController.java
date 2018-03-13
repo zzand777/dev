@@ -1,5 +1,6 @@
 package dev.springboot.company;
 
+import dev.springboot.company.projection.CompanyProjection;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -19,7 +20,7 @@ public class CompanyController{
     CompanyService companyService;
 
     @GetMapping
-    public Iterable<Company> selectCompanyAll(){
+    public Iterable<CompanyProjection> selectCompanyAll(){
         return companyService.selectAll();
     }
 
