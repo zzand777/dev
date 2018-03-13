@@ -1,11 +1,9 @@
-package dev.springboot.branch.entity.id;
-
-import java.io.Serializable;
-
-import javax.persistence.Column;
-import javax.persistence.Embeddable;
+package dev.springboot.domain.branch.entity.id;
 
 import lombok.Data;
+import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
 
 @Embeddable
 @Data

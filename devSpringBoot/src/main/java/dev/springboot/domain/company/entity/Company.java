@@ -1,6 +1,6 @@
-package dev.springboot.company.entity;
+package dev.springboot.domain.company.entity;
 
-import dev.springboot.company.entity.id.CompanyID;
+import dev.springboot.domain.company.entity.id.CompanyID;
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;

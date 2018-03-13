@@ -1,4 +1,4 @@
-package dev.springboot.branch.projection;
+package dev.springboot.domain.branch.projection;
 
 import org.springframework.beans.factory.annotation.Value;
 

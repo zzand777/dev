@@ -1,6 +1,6 @@
-package dev.springboot.company.projection;
+package dev.springboot.domain.company.projection;
 
-import dev.springboot.company.entity.Company;
+import dev.springboot.domain.company.entity.Company;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.rest.core.config.Projection;
 
