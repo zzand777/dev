@@ -7,11 +7,9 @@ import javax.persistence.Embeddable;
 
 import lombok.Builder;
 import lombok.Data;
-import lombok.ToString;
 
 @Embeddable
 @Data
-@ToString(includeFieldNames=false)
 public class CompanyID implements Serializable{
 
     private static final long serialVersionUID = 9180739068191713553L;
@@ -25,5 +23,9 @@ public class CompanyID implements Serializable{
     public CompanyID(String compCd){
         this.compCd = compCd;
     }
+
+    public String toString() {
+		return String.format("%s", compCd);
+	}
 
 }
