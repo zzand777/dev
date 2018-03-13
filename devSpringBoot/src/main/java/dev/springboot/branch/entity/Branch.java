@@ -1,5 +1,6 @@
-package dev.springboot.branch;
+package dev.springboot.branch.entity;
 
+import dev.springboot.branch.entity.id.BranchID;
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;

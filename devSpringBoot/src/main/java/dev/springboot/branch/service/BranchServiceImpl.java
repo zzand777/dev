@@ -1,5 +1,6 @@
-package dev.springboot.branch;
+package dev.springboot.branch.service;
 
+import dev.springboot.branch.repository.BranchRepository;
 import dev.springboot.branch.projection.BranchProejction;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;

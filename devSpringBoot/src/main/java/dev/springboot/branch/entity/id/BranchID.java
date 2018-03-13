@@ -1,4 +1,4 @@
-package dev.springboot.branch;
+package dev.springboot.branch.entity.id;
 
 import java.io.Serializable;
 
