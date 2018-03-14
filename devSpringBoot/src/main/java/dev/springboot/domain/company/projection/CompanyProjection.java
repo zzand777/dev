@@ -9,7 +9,7 @@ import java.util.List;
 @Projection(name="companyAll", types={Company.class})
 public interface CompanyProjection{
     
-    @Value("#{target.companyID.getCompCd()}")
+    @Value("#{target.companyID.compCd}")
     public String getCompCd();
 
     public String getCompNm();

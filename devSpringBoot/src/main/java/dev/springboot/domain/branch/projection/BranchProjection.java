@@ -9,10 +9,10 @@ import java.util.List;
 @Projection(name="branchAll", types={Branch.class})
 public interface BranchProjection{
 
-    @Value("#{target.branchID.getCompanyID().getCompCd()}")
+    @Value("#{target.branchID.companyID.compCd}")
     String getCompCd();
     
-    @Value("#{target.branchID.getBrchCd()}")
+    @Value("#{target.branchID.brchCd}")
     String getBrchCd();
 
     String getBrchNm();
