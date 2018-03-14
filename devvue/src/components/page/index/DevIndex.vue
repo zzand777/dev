@@ -104,11 +104,10 @@ export default {
   },
   methods: {
     testGet () {
-      alert(0)
-      this.$http.get('', {}).then(res => {
+      this.$http.get('/dev/company', {}).then(res => {
         alert('ok')
       }).catch(error => {
-        alert(error.response)
+        alert(error.message)
       })
     }
   },
