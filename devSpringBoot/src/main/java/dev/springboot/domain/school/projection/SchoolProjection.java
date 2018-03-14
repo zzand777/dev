@@ -7,13 +7,13 @@ import org.springframework.data.rest.core.config.Projection;
 @Projection(name="schoolAll", types={School.class})
 public interface SchoolProjection{
 
-    @Value("#{target.schoolID.branchID.companyID.compCd}")
+    @Value("#{target.getSchoolID().getBranchID().getCompanyID().getCompCd()}")
     String getCompCd();
 
-    @Value("#{target.schoolID.branchID.brchCd}")
+    @Value("#{target.getSchoolID().getBranchID().getBrchCd()}")
     String getBrchCd();
 
-    @Value("#{target.schoolID.schlCd}")
+    @Value("#{target.getSchoolID().getSchlCd()}")
     String getSchlCd();
 
     String getSchlnm();
