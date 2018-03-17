@@ -12,9 +12,9 @@ Vue.use(BootstrapVue)
 Vue.config.productionTip = false
 Vue.prototype.axios = axios
 Vue.prototype.kakao = {
-  clientId: 'bc9883270b96b922857ec3304858a967',
-  clientSecret: 'HQWfvSTdxByJ3FQWnpUvIpKXNDktY2YW',
-  redirectUri: 'http://116.37.190.72:8081/KakaoLoginResult'
+  clientId: '',
+  clientSecret: '',
+  redirectUri: ''
 }
 
 /* eslint-disable no-new */
