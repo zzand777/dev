@@ -8,8 +8,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import java.util.List;
 
-@RepositoryRestResource(exported=false)
-//@RepositoryRestResource(path="branch", collectionResourceRel="branchResult", excerptProjection=BranchProjection.class)
+@RepositoryRestResource(path="branch", collectionResourceRel="branchResult", excerptProjection=BranchProjection.class, exported=false)
 public interface BranchRepository extends JpaRepository<Branch, BranchID>{
 
     // /branch/search/findByBrchNm?brchNm=
