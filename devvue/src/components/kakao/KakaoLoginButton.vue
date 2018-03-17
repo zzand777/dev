@@ -15,7 +15,11 @@ export default {
   },
   methods: {
     kakaoLogin () {
-      location.href = 'https://kauth.kakao.com/oauth/authorize?client_id=' + this.kakao.clientId + '&redirect_uri=' + this.kakao.redirectUri + '&response_type=code'
+      /*
+      window.open('https://kauth.kakao.com/oauth/authorize?client_id=' + this.kakao.clientId + '&redirect_uri=' + this.kakao.redirectUri + '&response_type=code', 'kakaoLogin')
+      window.location.replace = 'https://kauth.kakao.com/oauth/authorize?client_id=' + this.kakao.clientId + '&redirect_uri=' + this.kakao.redirectUri + '&response_type=code'
+      */
+      window.location.href = 'https://kauth.kakao.com/oauth/authorize?client_id=' + this.kakao.clientId + '&redirect_uri=' + this.kakao.redirectUri + '&response_type=code'
     }
   },
   computed: {
