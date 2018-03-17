@@ -6,6 +6,7 @@ import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
 import javax.persistence.OneToMany;
@@ -31,7 +32,7 @@ public class Branch{
     @Column(name="BRCH_TEL")
     private String brchTel;
 
-    @OneToMany
+    @OneToMany(fetch=FetchType.EAGER)
     @JoinColumns({@JoinColumn(name="COMP_CD", referencedColumnName="COMP_CD"), @JoinColumn(name="BRCH_CD", referencedColumnName="BRCH_CD")})
     private List<School> school;
 
