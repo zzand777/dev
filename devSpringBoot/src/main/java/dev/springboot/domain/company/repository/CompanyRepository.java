@@ -7,7 +7,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
-@RepositoryRestResource(path="company", collectionResourceRel="companyResult", excerptProjection=CompanyProjection.class)
+@RepositoryRestResource(path="company", collectionResourceRel="companyResult", excerptProjection=CompanyProjection.class, exported=false)
 public interface CompanyRepository extends JpaRepository<Company, CompanyID>{
     public List<CompanyProjection> findAllProjectedBy();
 }
