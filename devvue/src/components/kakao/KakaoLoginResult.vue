@@ -27,12 +27,20 @@ export default {
 
       this.axios.post('https://kauth.kakao.com/oauth/token', data)
       .then(res => {
-        /* alert(res) */
+        console.log(res)
+        /*
+        window.close()
         this.$router.push('/main')
+        */
+        this.$router.replace('/main')
       })
       .catch(err => {
-        alert(err)
+        console.log(err)
+        /*
+        window.close()
         this.$router.push('/')
+        */
+        this.$router.replace('/')
       })
     }
   }
